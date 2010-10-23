@@ -1,0 +1,5 @@
+Munin plugin to query murmur
+
+Does not have icesecret support.
+
+http://wiki.natenom.name/mumble/tools/munin
