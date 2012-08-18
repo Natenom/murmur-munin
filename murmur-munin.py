@@ -5,7 +5,7 @@
 # Copyright (c) 2012, Natenom / natenom@natenom.name
 
 #Path to Murmur.ice
-iceslice='/usr/share/slice/Murmur.ice'
+iceslice='/usr/share/Ice/slice/Murmur.ice'
 
 #Murmur-Port (not needed to work, only for display purposes)
 serverport=64738
