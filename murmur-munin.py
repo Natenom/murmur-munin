@@ -2,10 +2,7 @@
 # -*- coding: utf-8
 #
 # munin-murmur.py - "murmur stats (User/Bans/Uptime/Channels)" script for munin.
-# Copyright (c) 2010, Natenom / Natenom@natenom.name
-# Version: 0.0.4
-# 2010-09-03
-
+# Copyright (c) 2012, Natenom / natenom@natenom.name
 
 #Path to Murmur.ice
 iceslice='/usr/share/slice/Murmur.ice'
