@@ -16,11 +16,21 @@ serverport=64738
 #Port where ice listen
 iceport=6502
 
+#MessageSizeMax; increase this value, if you get a MemoryLimitException.
+# Also check this value in murmur.ini of your Mumble-Server.
+# This value is being interpreted in kibiBytes.
+messagesizemax="65535"
 
 import Ice, sys
 Ice.loadSlice("--all -I/usr/share/slice %s" % iceslice)
 
-ice = Ice.initialize()
+props = Ice.createProperties([])
+props.setProperty("Ice.MessageSizeMax", str(messagesizemax))
+id = Ice.InitializationData()
+id.properties = props
+
+ice = Ice.initialize(id)
+
 import Murmur
 
 if (sys.argv[1:]):
