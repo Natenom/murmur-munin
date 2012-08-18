@@ -19,7 +19,7 @@ iceport=6502
 messagesizemax="65535"
 
 import Ice, sys
-Ice.loadSlice("--all -I/usr/share/slice %s" % iceslice)
+Ice.loadSlice("--all -I/usr/share/Ice/slice %s" % iceslice)
 
 props = Ice.createProperties([])
 props.setProperty("Ice.MessageSizeMax", str(messagesizemax))
