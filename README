@@ -3,3 +3,5 @@ Munin plugin to query murmur
 Does not have icesecret support.
 
 http://wiki.natenom.name/mumble/tools/munin
+
+Moved to another repo: https://github.com/Natenom/munin-plugins
